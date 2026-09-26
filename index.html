@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Личный архив и портфолио геодезиста.">
+  <title>GEO / Личный архив геодезиста</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" id="siteBrand">GEO / PERSONAL ARCHIVE</a>
+    <div class="coordinates" id="siteCoordinates">55°45′21″ N / 37°37′04″ E</div>
+  </header>
+
+  <main id="top">
+    <section class="hero section-grid">
+      <div class="hero-main">
+        <div class="eyebrow"><span id="eyebrowLeft"></span><span id="eyebrowRight"></span></div>
+
+        <div class="hero-title-wrap">
+          <h1 id="heroTitle"></h1>
+          <p class="hero-copy" id="heroDescription"></p>
+        </div>
+
+        <div class="hero-lower" id="about">
+          <div class="hero-about">
+            <span class="micro-label" id="aboutLabel"></span>
+            <p id="aboutText"></p>
+          </div>
+
+          <div class="hero-contacts" id="contact" aria-label="Контакты">
+            <span class="micro-label" id="contactsLabel"></span>
+            <div class="contact-mini-grid" id="contactsGrid"></div>
+          </div>
+
+          <div class="level-line"><span id="levelLeft"></span><i></i><span id="levelRight"></span></div>
+        </div>
+      </div>
+
+      <aside class="hero-index" aria-label="Направления работ">
+        <div class="index-head"><span id="directionsTitle"></span><span id="directionsRange"></span></div>
+        <ol id="directionsList"></ol>
+        <a class="index-link" href="#archive" id="directionsArchiveLink"></a>
+      </aside>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track" id="tickerTrack"></div>
+    </div>
+
+    <section class="block expertise-block" id="expertise">
+      <header class="block-head">
+        <span class="mega-number" id="expertiseNumber"></span>
+        <div><span class="kicker" id="expertiseKicker"></span><h2 id="expertiseTitle"></h2></div>
+        <p id="expertiseDescription"></p>
+      </header>
+
+      <div class="expertise-layout">
+        <div class="expertise-column">
+          <div class="subhead"><span id="skillsCode"></span><h3 id="skillsTitle"></h3></div>
+          <div class="skills-grid skills-grid-compact" id="skillsGrid"></div>
+        </div>
+
+        <div class="expertise-column instruments-column">
+          <div class="subhead"><span id="instrumentsCode"></span><h3 id="instrumentsTitle"></h3></div>
+          <div class="instrument-list instrument-list-compact" id="instrumentsList"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block archive-block" id="archive">
+      <header class="block-head">
+        <span class="mega-number" id="archiveNumber"></span>
+        <div><span class="kicker" id="archiveKicker"></span><h2 id="archiveTitle"></h2></div>
+        <p id="archiveDescription"></p>
+      </header>
+      <div class="filter-row" id="filterRow" aria-label="Фильтр архива"></div>
+      <div class="project-grid" id="projectGrid"></div>
+    </section>
+
+    <footer class="site-footer">
+      <span id="footerBrand"></span>
+      <span>© <span id="year"></span></span>
+      <div class="footer-links" id="footerLinks"></div>
+    <!-- Yandex.Metrika informer -->
+<a href="https://metrika.yandex.ru/stat/?id=112303987&amp;from=informer" target="_blank" rel="nofollow">
+    <img src="https://informer.yandex.ru/informer/112303987/3_1_FFFFFFFF_EFEFEFFF_0_uniques"
+         style="width:88px; height:31px; border:0;"
+         alt="Яндекс.Метрика"
+         title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)"
+        />
+</a>
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112303987', 'ym');
+
+    ym(112303987, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112303987" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    </footer>
+  </main>
+
+  <script src="content.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

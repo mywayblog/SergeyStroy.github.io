@@ -1,0 +1,8 @@
+Складывайте фотографии сайта в эту папку.
+Примеры путей для content.js:
+assets/object-01.jpg
+assets/object-02.jpeg
+assets/object-03.png
+assets/object-04.webp
+assets/object-05.avif
+assets/object-06.gif
