@@ -721,3 +721,167 @@ body.photo-viewer-open{overflow:hidden}
 @media(prefers-reduced-motion:reduce){
   .photo-viewer,.project-photo::after,.project-photo img,.photo-viewer-close,.photo-viewer-nav{transition:none!important}
 }
+
+/* REV.09 — мобильная адаптация без горизонтальной прокрутки */
+html,body{
+  width:100%;
+  max-width:100%;
+  overflow-x:hidden;
+}
+main,.topbar,.hero,.hero-main,.hero-index,.block,.site-footer{
+  width:100%;
+  max-width:100%;
+}
+.hero-main,.hero-index,.hero-title-wrap,.hero-lower,.hero-about,.hero-contacts,
+.block-head,.expertise-layout,.expertise-column,.subhead,.project-grid,.project,
+.project-body,.instrument-list,.instrument-list article,.skills-grid,.skills-grid article,
+.contact-mini-grid,.contact-mini-grid a,.site-footer,.footer-links{
+  min-width:0;
+}
+img,video,svg,canvas{max-width:100%}
+.hero-index b,.hero-index small,.project h3,.project p,.subhead h3,.instrument-list h3,
+.instrument-list p,.skills-grid h3,.skills-grid p,.block-head p,.footer-links a{
+  overflow-wrap:anywhere;
+  word-break:normal;
+}
+
+@media(max-width:720px){
+  html,body{overflow-x:hidden}
+
+  .topbar{
+    width:100%;
+    grid-template-columns:minmax(0,1fr);
+    padding-left:14px;
+    padding-right:14px;
+  }
+  .brand{
+    min-width:0;
+    white-space:normal;
+    overflow-wrap:anywhere;
+  }
+  .coordinates{display:none!important}
+
+  .hero-main,.hero-index,.block,.contact-block{
+    width:100%;
+    max-width:100%;
+    padding-left:14px;
+    padding-right:14px;
+  }
+  .eyebrow,.index-head{
+    gap:12px;
+  }
+  .eyebrow>* , .index-head>*{min-width:0}
+
+  .hero h1{
+    width:100%;
+    max-width:100%;
+    margin:38px 0 30px;
+    font-size:clamp(54px,17vw,76px);
+    line-height:.82;
+    letter-spacing:-.065em;
+    overflow-wrap:normal;
+    word-break:normal;
+  }
+  .hero h1 span{
+    display:block;
+    margin-left:0!important;
+  }
+  .hero-copy{
+    width:100%;
+    max-width:100%;
+    font-size:18px;
+    line-height:1.48;
+  }
+  .hero-lower{width:100%;max-width:100%}
+  .contact-mini-grid{width:100%;max-width:100%}
+
+  .hero-index li{
+    grid-template-columns:42px minmax(0,1fr);
+    gap:10px;
+  }
+  .hero-index b{font-size:22px;line-height:1.1}
+  .hero-index small{
+    display:block;
+    max-width:100%;
+    font-size:14px;
+    line-height:1.35;
+    overflow-wrap:anywhere;
+    word-break:break-word;
+  }
+
+  .ticker{max-width:100vw;overflow:hidden}
+
+  .block-head,.block-head.compact,.contact-head{
+    width:100%;
+    grid-template-columns:1fr;
+    gap:16px;
+  }
+  .mega-number{font-size:96px;line-height:.72}
+  .block h2,.contact-block h2{
+    max-width:100%;
+    font-size:clamp(38px,12vw,52px);
+    line-height:.9;
+    letter-spacing:-.05em;
+    overflow-wrap:anywhere;
+  }
+  .block-head p{font-size:17px}
+
+  .expertise-layout,.project-grid,.skills-grid{
+    width:100%;
+    max-width:100%;
+  }
+  .subhead{
+    width:100%;
+    min-height:0;
+    padding:14px;
+    align-items:flex-start;
+    flex-wrap:wrap;
+  }
+  .subhead h3{
+    width:100%;
+    max-width:100%;
+    font-size:27px;
+    line-height:1.05;
+  }
+
+  .skills-grid-compact article{padding:16px;min-height:0}
+  .skills-grid h3{font-size:24px;line-height:1.08}
+  .skills-grid p{font-size:16px}
+
+  .instrument-list-compact article,
+  .instrument-list article{
+    width:100%;
+    grid-template-columns:58px minmax(0,1fr);
+    gap:10px;
+    padding:16px 10px;
+  }
+  .instrument-list h3{font-size:25px;line-height:1.08}
+  .instrument-list p{font-size:16px}
+  .tool-no{font-size:44px}
+
+  .project{width:100%;max-width:100%}
+  .project-media{width:100%;max-width:100%;height:240px}
+  .project-body{width:100%;max-width:100%;padding:15px}
+  .project h3{font-size:25px;line-height:1.08}
+  .project p{font-size:16px}
+
+  .filter-row{width:100%;max-width:100%;gap:7px}
+  .filter{max-width:100%;font-size:14px;padding:10px 12px;white-space:normal}
+
+  .site-footer{
+    width:100%;
+    max-width:100%;
+    grid-template-columns:1fr;
+    gap:14px;
+    padding:18px 14px;
+  }
+  .site-footer>*,.footer-links{grid-column:1!important;min-width:0}
+  .footer-links{justify-content:flex-start;gap:12px}
+}
+
+@media(max-width:380px){
+  .hero h1{font-size:50px}
+  .hero-index b{font-size:20px}
+  .block h2,.contact-block h2{font-size:36px}
+  .mega-number{font-size:82px}
+}
